@@ -1,0 +1,377 @@
+/* TOP BAR */
+.sidenav {
+  height: 10%;
+  width: 100%;
+  top: 0;
+  left: 0;
+  position: fixed;
+  z-index: 300;
+  background-color: black;
+  opacity: 1;
+  align-content: center;
+  text-align: center;
+  box-shadow: 0 10px 10px black;
+  overflow: visible;
+}
+
+
+/*~~~~ Navigation Bar ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~*/
+
+
+.sidenav a {
+  padding: 6px 8px 6px 16px;
+  text-decoration: none;
+  font-size: 1.5em;
+  color: #ffffff;
+  text-shadow: 1px 1px 2px red, 0 0 1em #7803ff, 0 0 0.2em #009900; /* CREDIT - https://developer.mozilla.org/en-US/docs/Web/CSS/text-shadow */
+  display: inline;
+  font-weight: 600;
+  font-family: Garamond, serif;
+}
+
+.sidenav p {
+  padding: 6px 8px 6px 16px;
+  color: #ffffcc;
+  text-shadow: 1px 1px 2px red, 0 0 1em #7803ff, 0 0 0.2em #009900;
+  font-size: 1.7em;
+  display: inline;
+  font-family: Garamond, serif;
+}
+
+.sidenav a:hover {
+  color: #ff6666;
+}
+
+
+
+
+
+
+/*~~~~~~~~~~~~~~~~~ BODY / MAIN ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~*/
+
+body {
+  background-color: black;
+  background-size: 100%;
+  background-position: 0 30%;
+  background-repeat: no-repeat;
+  opacity: 1.0;
+}
+
+
+.main {
+  background: linear-gradient(to bottom, transparent 0%, black 50%);
+  background-attachment: local;
+  position: absolute;
+  bottom: 0;
+  height: 90%;
+  width: 100%;
+  left: 0;
+  z-index: 1;
+  overflow-y: scroll;
+  font-family: Garamond, serif;
+}
+
+.main #content {
+  text-align: center;
+  width: 60%;
+  margin: auto;
+  padding-top: 90px;
+  padding-bottom: 100px;
+
+}
+
+.main img {
+  display: block;
+  margin: auto;
+}
+
+.mainlogo {
+  width: 50%;
+  height: auto;
+}
+
+
+h1 {
+  color: #ffffcc;
+  font-size: 2.5em;
+  text-align: center;
+  margin-top: 0;
+  padding: 30px 0 40px 0;
+  font-weight: 300;
+  font-family: Garamond, serif;
+  text-shadow: 5px 8px  3px black;
+}
+
+p {
+  color: #ffffcc;
+  font-size: 1.3em;
+  margin: 5% 10% 0 10%;
+}
+
+li {
+  color: #ff9980;
+  font-size: 1.2em;
+  margin: 0 10% 0 5%;
+}
+
+.main a {
+  color: #ee9910;
+  font-size: 1.0em;
+  margin: auto;
+  font-weight: 300;
+  font-family: Garamond, serif;
+  text-decoration: none;
+
+}
+
+a:hover {
+  color: red;
+}
+
+
+
+/*~~~~~ COLUMNS ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~*/
+
+.column {
+  float: left;
+  width: 50%;
+}
+
+/* Clear floats after the columns */
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+
+
+/*~~~~~~~ SCROLLBAR STUFF ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~*/
+/* width */
+::-webkit-scrollbar {
+  width: 12px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  background: linear-gradient(black, 80%, #506a75);
+  box-shadow: inset 0 0 5px grey;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: linear-gradient(#38484f,#c0c0c0);
+  outline: 1px solid #38484f;
+  border-radius: 100px;
+  box-shadow: inset 2px 2px 5px 0 black;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: #ffffcc;
+}
+
+
+
+
+
+/*~~~~~~~~~~ TOP NAV STUFF ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~*/
+
+#topnav {
+  overflow: visible;
+  opacity: 1;
+  background-image: url("pics/pattern.png");
+  background-color: black;
+  background-size: 70%;
+  box-shadow: inset 0 0 20px 20px black;
+  position: fixed;
+  z-index: 2;
+  display: none;
+  height: auto;
+  width: 70%;
+  top: 10%;
+  left: 18%;
+  padding-bottom: 20px;
+  padding-top: 20px;
+}
+
+#topnav a {
+  color: #ffffcc;
+  text-shadow: 1px 1px 2px red, 0 0 1em #7803ff, 0 0 0.2em #009900; /* CREDIT - https://developer.mozilla.org/en-US/docs/Web/CSS/text-shadow */
+  display: block;
+  font-weight: 700;
+  font-family: Garamond, serif ;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 1.7em;
+  text-align: center;
+}
+
+
+
+
+
+/*~~~~~~~~~ HAMBURGER MENU ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~*/
+
+
+.icon {
+  border: 4px outset rgba(115, 6, 6, 0.5);
+  background-image: linear-gradient(105deg, #9e5409 15%, #d17213 40%, #ffa74f 60%, #9e5409 85%, #d17213);
+  background-size: 200% 200%;
+  animation: shine 2s infinite alternate;
+  background-color: black;
+  display: none;
+  width: 4.5em;
+  height: 4.5em;
+  position: fixed;
+  z-index: 1000;
+  right: 4%;
+  top: 1%;
+}
+
+.mybars {
+  width: 80%;
+  height: 80%;
+  margin: auto;
+  margin-top: 19%;
+}
+
+
+.bar{
+  background-color: #730606;
+  box-shadow: 1px 1px 2px white, 0 0 2em yellow, 0 0 0.2em red;
+  width: 90%;
+  height: 15%;
+  margin-top: 16%;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.icon:active {
+  box-shadow: 0 0 40px darkred;
+}
+
+
+/* Add a background color on mouse-over */
+
+#topnav a:hover {
+  color: #ff6666;
+}
+
+
+/* Style all font awesome ICONS */
+
+
+.fa-brands {
+  color: #943b00;
+  text-shadow: 1px 1px 2px white, 0 0 2em darkred, 0 0 0.2em red;
+  text-decoration: none;
+  font-size: 0.7em !important;
+  padding-bottom: 20px;
+}
+
+.fa-brands:hover {
+  color: white;
+  text-shadow: 2px 2px 4px white, 0 0 3em red, 0 0 1em red;
+}
+
+#socials {display: block; width:5%; position: fixed; top: 22%; right: 10.4%;}
+
+#socials p {display: block; font-size: 1.7em; position: relative; left: -38%; padding-bottom: 20px;}
+
+/* SWORD SHINE FUNCTION */
+@keyframes shine {
+  0%   {background-position: 0% 0%}
+  100% {background-position: 100% 100%}
+}
+
+
+
+
+
+
+/*~~~~~~~~~~~~ DESKTOP SWORD STYLING ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~*/
+
+#sword {align-content: center; width:5%; height: 70%; display: block; position: fixed; top:5%; right:10%; border: 2px outset lightgray; background-image: linear-gradient(105deg, #c2b39f 15%, #e3e3e3 40%, white 60%, #c2b39f 85%, #e3e3e3); background-size: 200% 200%; clip-path: polygon(0% 0%, 100% 0, 100% 80%, 50% 100%, 0 80%); animation: shine 2s infinite alternate; &:after {
+        content: "";
+        position: absolute;
+        border-radius: 100px;
+        right:48%;
+        top: 0;
+        width: 2px;
+        height: 80%;
+        z-index: -1;
+        background-image: linear-gradient(#8a6960, lightgray,white);}
+  }
+
+
+
+/*~~~~~~~~~ MOBILE SWORD ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~*/
+
+#titlesword {z-index: 2; align-content: center; width:85%; height: 3em; display: none; position: fixed; top:2.8%; right:10%; border: 2px outset gray; box-shadow: inset -62px 1px 68px -31px black; background-image: linear-gradient(105deg, #c2b39f 15%, #e3e3e3 40%, white 60%, #c2b39f 85%, #e3e3e3); background-size: 200% 200%; clip-path: polygon(15% 0%, 100% 0%, 100% 100%, 15% 100%, 0% 50%); animation: shine 2s infinite alternate; &:after {
+        content: "";
+        position: absolute;
+        border-radius: 100px;
+        right:0;
+        top: 47%;
+        width: 82%;
+        height: 2px;
+        z-index: -1;
+        background-image: linear-gradient(#8a6960, lightgray,white);}
+  }
+
+
+
+
+
+
+
+
+
+/*~~~~~~~~~~~~~~ SCREEN SIZE RESPONSIVE ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~*/
+
+
+
+
+@media only screen and (max-width: 1000px) {
+
+  .column {width: 100%;}
+  .main {background: linear-gradient(0deg,rgba(0, 0, 0, 1) 70%, rgba(87, 199, 133, 0) 100%);background-attachment: local;}
+  .sidenav a {font-size: 18px;}
+  #socials{display: block; width:5%; position: fixed; top: 18%; right: 10.6%;}
+  .fa-brands{display: block; padding-bottom: 15px; font-size:0.9em !important;}
+  #sword {align-content: center; width:5%; height: 50%; display: block; position: fixed; top:5%; right:10%; border: 2px outset lightgray; background-image: linear-gradient(105deg, #c2b39f 15%, #e3e3e3 40%, white 60%, #c2b39f 85%, #e3e3e3); background-size: 200% 200%; clip-path: polygon(0% 0%, 100% 0, 100% 80%, 50% 100%, 0 80%); animation: shine 2s infinite alternate; &:after {
+        content: "";
+        position: absolute;
+        border-radius: 100px;
+        right:48%;
+        top: 0;
+        width: 2px;
+        height: 80%;
+        z-index: -1;
+        background-image: linear-gradient(#8a6960, lightgray,white);}}
+
+}
+
+
+/* MOBILE */
+
+@media only screen and (max-width: 800px) {
+  .icon {display: block;}
+  #sword{display:none;}
+  #titlesword{display: block;}
+  .fa-brands{font-size:1.2em !important; display: inline; padding-right: 30px; position: relative; top: 15%; left: 32%; color: #421515;}
+  .sidenav {display: none;}
+  .main {top: 0; height: 100%;}
+  .circle {left: 1%; top: 65%;}
+  .circle4 {left: 2%; top: 60%;}
+  .galleryimg {height: 100px; width: 100px;}
+  .shopimg {width: 90%; height: auto;}
+  .avatar {height: 200px; width: 120px; left: 0;}
+  .mainlogo {width: 90%; height: auto;}
+}
+
+
+
+
+
