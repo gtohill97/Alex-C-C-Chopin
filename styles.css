@@ -363,10 +363,7 @@ a:hover {
   .fa-brands{font-size:1.2em !important; display: inline; padding-right: 30px; position: relative; top: 15%; left: 32%; color: #421515;}
   .sidenav {display: none;}
   .main {top: 0; height: 100%;}
-  .circle {left: 1%; top: 65%;}
-  .circle4 {left: 2%; top: 60%;}
-  .galleryimg {height: 100px; width: 100px;}
-  .shopimg {width: 90%; height: auto;}
+  .main #content {width: 90%;}
   .avatar {height: 200px; width: 120px; left: 0;}
   .mainlogo {width: 90%; height: auto;}
 }
